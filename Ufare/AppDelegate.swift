@@ -7,17 +7,36 @@
 //
 
 import UIKit
+import GooglePlaces
+import UberCore
+import LyftSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSPlacesClient.provideAPIKey("AIzaSyCWicYaXulbf7_mWq4hjOg8gi6lBG8plho")
+        LyftConfiguration.developer = (token: "kghdDuGF/Ax0QkZzKUTi1YeNfUP91wtQKMUjnw8iNu1Bo9CdwLA/2pHOZzAI1Nv/HWWFlqiyUfUfsqlgDY8iJmmM9os1zpe8Iddx1NEHn4pd+wZVG7v9gP4=", clientId: "DMGHwfiwPhyO")
         return true
     }
+    
+    //MARK:- UBERCORE REQUIREMENTS
+    @available(iOS 9, *)
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+        let handledUberURL = UberAppDelegate.shared.application(app, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation] as Any)
+        
+        return handledUberURL
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        let handledUberURL = UberAppDelegate.shared.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        
+        return handledUberURL
+    }
+    //END UBER REQUIREMENTS
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB41502C2096149000E942D7 /* FareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB41502B2096149000E942D7 /* FareVC.swift */; };
+		BB41502E20962BBC00E942D7 /* UberData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB41502D20962BBC00E942D7 /* UberData.swift */; };
 		BB522A622095FEC900553B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB522A612095FEC900553B4D /* AppDelegate.swift */; };
 		BB522A642095FEC900553B4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB522A632095FEC900553B4D /* ViewController.swift */; };
 		BB522A672095FEC900553B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB522A652095FEC900553B4D /* Main.storyboard */; };
 		BB522A692095FECC00553B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB522A682095FECC00553B4D /* Assets.xcassets */; };
 		BB522A6C2095FECC00553B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB522A6A2095FECC00553B4D /* LaunchScreen.storyboard */; };
+		BB84711D209660FD001FF506 /* LyftData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB84711C209660FD001FF506 /* LyftData.swift */; };
+		BBC612252096376600216A89 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC612242096376600216A89 /* Constants.swift */; };
+		D46B17381BD71F536CBC10B9 /* Pods_Ufare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD82FEA425AFB7435ED2516 /* Pods_Ufare.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07453F3532EBBD8765744206 /* Pods-Ufare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ufare.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ufare/Pods-Ufare.release.xcconfig"; sourceTree = "<group>"; };
+		6A46A11B74E960BCB0CAB16E /* Pods-Ufare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ufare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ufare/Pods-Ufare.debug.xcconfig"; sourceTree = "<group>"; };
+		BB41502B2096149000E942D7 /* FareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareVC.swift; sourceTree = "<group>"; };
+		BB41502D20962BBC00E942D7 /* UberData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberData.swift; sourceTree = "<group>"; };
 		BB522A5E2095FEC900553B4D /* Ufare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ufare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB522A612095FEC900553B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB522A632095FEC900553B4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,9 @@
 		BB522A682095FECC00553B4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB522A6B2095FECC00553B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB522A6D2095FECC00553B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB84711C209660FD001FF506 /* LyftData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyftData.swift; sourceTree = "<group>"; };
+		BBC612242096376600216A89 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EDD82FEA425AFB7435ED2516 /* Pods_Ufare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ufare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D46B17381BD71F536CBC10B9 /* Pods_Ufare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42C7AF54EB088C17F818BB3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A46A11B74E960BCB0CAB16E /* Pods-Ufare.debug.xcconfig */,
+				07453F3532EBBD8765744206 /* Pods-Ufare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1BD64717C1D4519E56D4CFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDD82FEA425AFB7435ED2516 /* Pods_Ufare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB522A552095FEC900553B4D = {
 			isa = PBXGroup;
 			children = (
 				BB522A602095FEC900553B4D /* Ufare */,
 				BB522A5F2095FEC900553B4D /* Products */,
+				42C7AF54EB088C17F818BB3D /* Pods */,
+				B1BD64717C1D4519E56D4CFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +86,12 @@
 		BB522A602095FEC900553B4D /* Ufare */ = {
 			isa = PBXGroup;
 			children = (
+				BBC612242096376600216A89 /* Constants.swift */,
 				BB522A612095FEC900553B4D /* AppDelegate.swift */,
+				BB84711C209660FD001FF506 /* LyftData.swift */,
+				BB41502D20962BBC00E942D7 /* UberData.swift */,
 				BB522A632095FEC900553B4D /* ViewController.swift */,
+				BB41502B2096149000E942D7 /* FareVC.swift */,
 				BB522A652095FEC900553B4D /* Main.storyboard */,
 				BB522A682095FECC00553B4D /* Assets.xcassets */,
 				BB522A6A2095FECC00553B4D /* LaunchScreen.storyboard */,
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB522A702095FECC00553B4D /* Build configuration list for PBXNativeTarget "Ufare" */;
 			buildPhases = (
+				ADC0326F01966CB54C6CE8DE /* [CP] Check Pods Manifest.lock */,
 				BB522A5A2095FEC900553B4D /* Sources */,
 				BB522A5B2095FEC900553B4D /* Frameworks */,
 				BB522A5C2095FEC900553B4D /* Resources */,
+				4DEA9E1AE54BEA0CBEB7F87B /* [CP] Copy Pods Resources */,
+				FF0E5456A59C6E81C90E7426 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +169,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DEA9E1AE54BEA0CBEB7F87B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ufare/Pods-Ufare-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ufare/Pods-Ufare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADC0326F01966CB54C6CE8DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ufare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF0E5456A59C6E81C90E7426 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ufare/Pods-Ufare-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/LyftSDK/LyftSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UberCore/UberCore.framework",
+				"${BUILT_PRODUCTS_DIR}/UberRides/UberRides.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LyftSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UberCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UberRides.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ufare/Pods-Ufare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB522A5A2095FEC900553B4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB41502E20962BBC00E942D7 /* UberData.swift in Sources */,
 				BB522A642095FEC900553B4D /* ViewController.swift in Sources */,
 				BB522A622095FEC900553B4D /* AppDelegate.swift in Sources */,
+				BB84711D209660FD001FF506 /* LyftData.swift in Sources */,
+				BB41502C2096149000E942D7 /* FareVC.swift in Sources */,
+				BBC612252096376600216A89 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +390,7 @@
 		};
 		BB522A712095FECC00553B4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A46A11B74E960BCB0CAB16E /* Pods-Ufare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +409,7 @@
 		};
 		BB522A722095FECC00553B4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07453F3532EBBD8765744206 /* Pods-Ufare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
